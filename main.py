@@ -17,12 +17,9 @@ defaults = {
 # ---------------------------------------------------------
 # DNIN SALES DATA FY23–FY40 (Extracted from ERP sheet)
 # ---------------------------------------------------------
-dnin_sales = [
-    150, 153, 153, 153, 195, 185, 180, 173, 170, 170,
-    170, 170, 170, 170, 170, 170, 170, 170
-]
+dnin_sales = [ 150, 153, 153 ]
 
-fys = list(range(2023, 2023 + len(dnin_sales)))
+fys = [2023,2024,2025]
 sales_df = pd.DataFrame({"FY": fys, "sales_units": dnin_sales})
 
 # ---------------------------------------------------------
@@ -102,17 +99,15 @@ print("Avg Productivity Factor:", productivity_trend)
 print("Avg Inventory Days:", inventory_days_trend)
 print("Avg Passage Ratio:", passage_ratio_trend)
 
-# ---------------------------------------------------------
-# FORECAST FROM FY26 → FY40 (USING SALES)
-# ---------------------------------------------------------
 
-future_sales = []
-future_years = []
+future_sales = [153, 195, 185]
+future_years = [2026,2027,2028]
 
+'''
 for fy, units in zip(fys, dnin_sales):
     if fy > 2025:      # only forecast FY26 onwards
         future_years.append(fy)
-        future_sales.append(units)
+        future_sales.append(units)'''
 
 forecast_output = []
 
