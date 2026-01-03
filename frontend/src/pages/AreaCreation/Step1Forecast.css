@@ -1,0 +1,55 @@
+.step1-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-6);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.tab-container {
+    margin-top: var(--space-4);
+}
+
+.tab-buttons {
+    display: flex;
+    gap: var(--space-2);
+    margin-bottom: var(--space-4);
+}
+
+.tab-btn {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-3) var(--space-5);
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    border: 1px solid var(--color-gray-300);
+    border-radius: var(--radius-full);
+    background-color: var(--color-white);
+    color: var(--color-gray-600);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.tab-btn:hover {
+    border-color: var(--color-gray-400);
+}
+
+.tab-btn.active {
+    background-color: var(--color-gray-800);
+    color: var(--color-white);
+    border-color: var(--color-gray-800);
+}
+
+.tab-content {
+    min-height: 300px;
+}

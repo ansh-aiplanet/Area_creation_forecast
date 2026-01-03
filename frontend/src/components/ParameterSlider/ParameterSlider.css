@@ -1,0 +1,91 @@
+.param-slider {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+.param-slider-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.param-slider-label {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    color: var(--color-gray-700);
+}
+
+.param-info {
+    color: var(--color-gray-400);
+    cursor: help;
+    display: flex;
+    align-items: center;
+}
+
+.param-slider-value {
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    color: var(--color-gray-800);
+}
+
+.param-slider-track-container {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+}
+
+.param-slider-min-value {
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    color: var(--color-gray-600);
+    min-width: 30px;
+}
+
+.param-slider-track {
+    position: relative;
+    flex: 1;
+    height: 8px;
+    background-color: var(--color-gray-200);
+    border-radius: var(--radius-full);
+    overflow: visible;
+}
+
+.param-slider-fill {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: #D93243; /* DENSO Red */
+    border-radius: var(--radius-full);
+    pointer-events: none;
+}
+
+.param-slider-thumb {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    background-color: #FFFFFF; /* White */
+    border: 2px solid #D93243; /* DENSO Red */
+    border-radius: 50%;
+    box-shadow: var(--shadow-sm);
+    pointer-events: none;
+    transition: left 0.1s ease;
+}
+
+.param-slider-input {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 20px;
+    opacity: 0;
+    cursor: pointer;
+    margin: 0;
+}

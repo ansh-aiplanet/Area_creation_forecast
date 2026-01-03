@@ -1,0 +1,126 @@
+.forecast-list {
+    margin-top: var(--space-4);
+}
+
+.forecast-list-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--space-4);
+}
+
+.forecast-list-title {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-weight: 600;
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-800);
+}
+
+.forecast-search {
+    position: relative;
+    width: 200px;
+}
+
+.search-icon {
+    position: absolute;
+    left: var(--space-3);
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--color-gray-400);
+}
+
+.search-input {
+    width: 100%;
+    padding: var(--space-2) var(--space-3);
+    padding-left: var(--space-8);
+    font-size: var(--font-size-sm);
+    border: 1px solid var(--color-gray-300);
+    border-radius: var(--radius-md);
+    background-color: var(--color-white);
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: var(--color-primary);
+}
+
+.search-input::placeholder {
+    color: var(--color-gray-400);
+}
+
+.forecast-items {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+.forecast-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-4);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-gray-200);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.forecast-item:hover {
+    border-color: var(--color-primary);
+    background-color: var(--color-primary-light);
+}
+
+.forecast-item.selected {
+    border-color: var(--color-primary);
+    background-color: var(--color-primary-light);
+}
+
+.forecast-name {
+    font-weight: 500;
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-800);
+}
+
+.forecast-metrics {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+}
+
+.metric {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+}
+
+.metric-label {
+    font-size: var(--font-size-xs);
+    color: var(--color-gray-500);
+    padding: 2px 6px;
+    background-color: var(--color-gray-100);
+    border-radius: var(--radius-sm);
+}
+
+.metric-value {
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    color: var(--color-gray-700);
+}
+
+.metric-change {
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: var(--radius-sm);
+}
+
+.metric-change.positive {
+    color: var(--color-success);
+}
+
+.metric-change.negative {
+    color: var(--color-error);
+}

@@ -1,0 +1,98 @@
+.file-upload-section {
+    margin-top: var(--space-4);
+}
+
+.file-upload-title {
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    color: var(--color-gray-700);
+    margin-bottom: var(--space-3);
+}
+
+.file-upload-zone {
+    border: 2px dashed var(--color-gray-300);
+    border-radius: var(--radius-lg);
+    padding: var(--space-10);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background-color: var(--color-gray-50);
+}
+
+.file-upload-zone:hover {
+    border-color: var(--color-primary);
+    background-color: var(--color-primary-light);
+}
+
+.file-upload-zone.dragging {
+    border-color: var(--color-primary);
+    background-color: var(--color-primary-light);
+}
+
+.file-upload-zone.has-file {
+    border-color: var(--color-success);
+    background-color: var(--color-success-light);
+}
+
+.file-input-hidden {
+    display: none;
+}
+
+.file-upload-icon {
+    color: var(--color-gray-400);
+    margin-bottom: var(--space-3);
+}
+
+.file-upload-text {
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-600);
+    margin-bottom: var(--space-1);
+}
+
+.file-upload-link {
+    color: var(--color-primary);
+    font-weight: 500;
+}
+
+.file-upload-hint {
+    font-size: var(--font-size-xs);
+    color: var(--color-gray-500);
+}
+
+.file-upload-columns {
+    font-size: var(--font-size-xs);
+    color: var(--color-gray-500);
+    margin-top: var(--space-3);
+    font-style: italic;
+}
+
+.file-selected {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-2) var(--space-3);
+    background-color: var(--color-white);
+    border-radius: var(--radius-md);
+}
+
+.file-name {
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    color: var(--color-gray-700);
+}
+
+.file-remove {
+    background: none;
+    border: none;
+    font-size: var(--font-size-lg);
+    color: var(--color-gray-500);
+    cursor: pointer;
+    padding: 0 var(--space-1);
+}
+
+.file-remove:hover {
+    color: var(--color-error);
+}
